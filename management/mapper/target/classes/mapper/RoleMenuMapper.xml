@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.aaa.yay.mapper.RoleMenuMapper" >
+  <resultMap id="BaseResultMap" type="com.aaa.yay.model.RoleMenu" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="ROLE_ID" property="roleId" jdbcType="BIGINT" />
+    <result column="MENU_ID" property="menuId" jdbcType="BIGINT" />
+  </resultMap>
+
+  <insert id="batchInsertRoleMenu" parameterType="List">
+    INSERT INTO t_role_menu (ROLE_ID,MENU_ID) VALUES
+    <foreach collection="list" item="rolemenu" separator=",">
+      (#{rolemenu.roleId},#{rolemenu.menuId})
+    </foreach>
+  </insert>
+
+  <delete id="deleteRoleMenu" parameterType="Long">
+    DELETE FROM t_role_menu WHERE ROLE_ID=#{roleId}
+  </delete>
+
+  <select id="selectMenuByRoleId" parameterType="list" resultMap="BaseResultMap">
+    SELECT * FROM t_role_menu WHERE ROLE_ID=#{roleId}
+  </select>
+</mapper>

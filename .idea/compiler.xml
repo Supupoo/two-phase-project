@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul" />
+        <module name="api" />
+        <module name="common" />
+        <module name="eureka-6081" />
+        <module name="provider-8082" />
+        <module name="model" />
+        <module name="eureka-6083" />
+        <module name="mapper" />
+        <module name="eureka-6082" />
+        <module name="consumer-7081" />
+        <module name="provider-8081" />
+        <module name="config" />
+        <module name="service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="consumer-7081" target="1.8" />
+      <module name="consumer-management" target="1.8" />
+      <module name="eureka-6081" target="1.8" />
+      <module name="eureka-6082" target="1.8" />
+      <module name="eureka-6083" target="1.8" />
+      <module name="eureka-management" target="1.8" />
+      <module name="management" target="1.8" />
+      <module name="mapper" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="provider-8081" target="1.8" />
+      <module name="provider-8082" target="1.8" />
+      <module name="provider-management" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="two-phase-project" target="1.8" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <script th:src="@{/layui/layui.js}"></script>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form class="layui-form layui-form-pane" >
+    <div class="layui-form-item">
+        <div class="layui-input-block" style="margin-left: 10px;">
+            <label class="layui-form-label">请输入用户名：</label>
+            <div class="layui-input-block">
+                <input type="text" name="bookName" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block" style="margin-left: 10px;">
+            <label class="layui-form-label">请输入密码：</label>
+            <div class="layui-input-block">
+                <input type="text" name="bookPrice" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item" style="margin-top: 20px">
+        <div class="layui-input-block" style="margin-left: 80px;">
+            <button class="layui-btn" lay-submit lay-filter="right">登录</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
